@@ -1,0 +1,17 @@
+<div itemscope itemtype="http://schema.org/Recipe" class="recipe">
+  <h2 class="intro-text text-center" itemprop="name">[[+pagetitle]] ([[TaggerGetTags? &groups=`3` &resources=`[[+id]]` &separator=`, ` &rowTpl=`@INLINE [[+tag]]`]])</h2>
+  <h3 class="intro-text text-center" itemprop="recipeCuisine">[[+recipe_ethnic]]</h3>
+  <hr>
+  <div class="recipe-source">Source: <span itemprop="author">[[+recipe_source]]</span></div>
+  <div class="recipe-yield">Yield: <span itemprop="recipeYield">[[+recipe_yield]]</span></div>
+  <h3 class="intro-text text-left">Ingredients:</h3>
+  <div class="recipe-ingredients">[[+recipe_ingredients]]</div>
+  <h3 class="intro-text text-left">Instructions:</h3>
+  <div class="recipe-instructions">[[+recipe_instructions]]</div> 
+  <div class="recipe-notes">[[+recipe_notes:nl2br]]</div>
+  <div class="recipe-nutrition">Nutritional Info Per Serving: <span itemprop="nutrition">[[migxrecipes_getNutrition? &docid=`[[+id]]`]] [[+recipe_nutrition_text]]</span></div>
+  <div class="recipte-poster">Posted by <span itemprop="contributor">[[+recipe_author]]</span></div>
+  <div class="recipe-published">Published: <time datetime="[[+publishedon::strtotime:date=`%Y-%m-%d`]]" itemprop="datePublished">
+    [[+publishedon:strtotime:date=`%B %d, %Y`]]</time>
+</div>
+</div>

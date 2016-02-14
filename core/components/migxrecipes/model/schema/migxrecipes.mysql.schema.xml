@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<model package="migxrecipes" baseClass="xPDOObject" platform="mysql" defaultEngine="MyISAM" phpdoc-package="" phpdoc-subpackage="" version="1.1">
+
+    <object class="migxrecipesNutrition" table="migxrecipes_nutritions" extends="xPDOSimpleObject">
+    	<field key="name" dbtype="varchar" phptype="string" precision="100" null="false" default="" />
+    </object>
+    
+    <object class="migxrecipesNutritionTranslation" table="migxrecipes_nutrition_translations" extends="xPDOSimpleObject">
+    	<field key="lang" dbtype="varchar" phptype="string" precision="3" null="false" default="" />
+        <field key="caption" dbtype="varchar" phptype="string" precision="100" null="false" default="" />
+        <field key="description" dbtype="varchar" phptype="string" precision="255" null="false" default="" />
+        <field key="unit_text" dbtype="varchar" phptype="string" precision="100" null="false" default="" />
+    </object>    
+
+</model>

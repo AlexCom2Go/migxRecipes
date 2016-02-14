@@ -1,0 +1,21 @@
+[
+  {
+    "id":7,
+    "source":1,
+    "property_preprocess":false,
+    "templatename":"migxrecipes_recipeTemplate",
+    "description":"Template for recipes",
+    "editor_type":0,
+    "category":0,
+    "icon":"icon-cube",
+    "template_type":0,
+    "locked":false,
+    "properties":[
+      
+    ],
+    "static":false,
+    "static_file":"",
+    "filename":"migxrecipes_recipetemplate.template.html",
+    "category_name":"migxRecipes"
+  }
+]
